@@ -62,6 +62,11 @@ create table don_dat_hang(
   ) references nha_cung_cap(ma_nha_cc)
 );
 
+create table chi_tiet_don_dat_hang(
+  chi_tiet_ddh int primary key, 
+  foreign key(chi_tiet_ddh) references don_dat_hang(so_don_hang)
+);
+
 insert into phieu_xuat (so_px, ngay_xuat) 
 values 
   (5, '2022-12-12');
