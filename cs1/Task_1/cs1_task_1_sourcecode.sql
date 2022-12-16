@@ -1,7 +1,10 @@
-drop database if exists cs1_module_3;
+drop
+database if exists cs1_module_3;
 create database cs1_module_3;
 use cs1_module_3;
 
+set foreign_key_checks = 0;
+set global sql_mode = '';
 create table vi_tri (
     ma_vi_tri int primary key,
     ten_vi_tri varchar(45)
@@ -36,6 +39,7 @@ create table nhan_vien (
     foreign key (ma_trinh_do)
         references trinh_do (ma_trinh_do)
 );
+
 
 create table loai_khach (
     ma_loai_khach int primary key,
@@ -119,3 +123,116 @@ create table hop_dong_chi_tiet (
     foreign key (ma_dich_vu_di_kem)
         references dich_vu_di_kem (ma_dich_vu_di_kem)
 );
+
+-- SET @@global.sql_mode= 'NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
+
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '1', 'Nguyễn Thị Hào', '1970-11-07', 
+    '0', '643431213', '0945423362', 'thihao07@gmail.com', 
+    '23 Nguyễn Hoàng, Đà Nẵng', 5
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '2', 'Phạm Xuân Diệu', '1992-08-08', 
+    '1', '865342123', '0954333333', 'xuandieu92@gmail.com', 
+    'K77/22 Thái Phiên, Quảng Trị', 3
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '3', 'Trương Đình Nghệ', '1990-02-27', 
+    '1', '488645199', '0373213122', 'nghenhan2702@gmail.com', 
+    'K323/12 Ông Ích Khiêm, Vinh', 1
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '4', 'Dương Văn quan', '1981-07-08', 
+    '1', '543432111', '0490039241', 'duongquan@gmail.com', 
+    'K453/12 Lê Lợi, Đà Nẵng', 1
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '5', 'Hoàng Trần Nhi Nhi', '1995-12-09', 
+    '0', '795453345', '0312345678', 'nhinhi123@gmail.com', 
+    '224 Lý Thái Tổ, Gia Lai', 4
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '6', 'Tôn Nữ Mộc Châu', '2005-12-06', 
+    '0', '732434215', '0988888844', 'tonnuchau@gmail.com', 
+    '37 Yên Thế, Đà Nẵng', 4
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '7', 'Nguyễn Mỹ Kim', '1984-04-08', 
+    '0', '856453123', '0912345698', 'kimcuong84@gmail.com', 
+    'K123/45 Lê Lợi, Hồ Chí Minh', 1
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '8', 'Nguyễn Thị Hào', '1999-04-08', 
+    '0', '965656433', '0763212345', 'haohao99@gmail.com', 
+    '55 Nguyễn văn Linh, kon Tum', 3
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '9', 'Trần đại Danh', '1994-07-01', 
+    '1', '432341235', '0643343433', 'danhhai99@gmail.com', 
+    '24 lý Thường Kiệt, Quảng Ngãi', 1
+  );
+  
+insert into khach_hang (
+  ma_khach_hang, ho_ten, ngay_sinh, 
+  gioi_tinh, so_cmnd, so_dien_thoai, 
+  email, dia_chi, ma_loai_khach
+) 
+values (
+    '10', 'Nguyễn Tâm Đắc', '1989-07-01', 
+    '1', '344343432', '0987654321', 'dactam@gmail.com', 
+    '22 Ngô Quyền, Đà Nẵng', 2
+  );
+select * from khach_hang;
