@@ -1,7 +1,7 @@
 drop
-database if exists ss3_quan_ly_sinh_vien;
-create database ss3_quan_ly_sinh_vien;
-use ss3_quan_ly_sinh_vien;
+database if exists ss3_student_management;
+create database ss3_student_management;
+use ss3_student_management;
 
 create table class (
     class_id int auto_increment primary key not null,
@@ -60,7 +60,7 @@ select
 from 
   class 
 where 
-  start_date like '%12%';
+  start_date like '%-12-%';
   
 -- Hiển thị tất cả các thông tin môn học có credit trong khoảng từ 3-5.
 select 

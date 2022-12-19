@@ -1,7 +1,7 @@
 drop
-database if exists ss3_quan_ly_ban_hang;
-create database ss3_quan_ly_ban_hang;
-use ss3_quan_ly_ban_hang;
+database if exists ss3_product_management;
+create database ss3_product_management;
+use ss3_product_management;
 
 create table customer(
   id int primary key, 
