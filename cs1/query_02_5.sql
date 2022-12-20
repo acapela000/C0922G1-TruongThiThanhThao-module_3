@@ -44,14 +44,10 @@ select
   count(kh.ma_khach_hang) as so_lan_dat_phong 
 from 
   khach_hang kh 
-  join loai_khach lk 
+  join loai_khach lk on lk.ma_loai_khach = kh.ma_loai_khach 
+  join hop_dong hd  on hd.ma_khach_hang = kh.ma_khach_hang 
 where 
-  lk.ma_loai_khach = kh.ma_loai_khach 
-  join hop_dong hd 
-where 
-  hd.ma_khach_hang = kh.ma_khach_hang 
-where 
-  ten_loai_khach = 'Diamond' 
+  lk.ten_loai_khach = 'Diamond' 
 group by 
   ma_khach_hang 
 order by 
@@ -64,30 +60,19 @@ order by
 select 
   kh.ma_khach_hang, 
   kh.ho_ten, 
-  lk.ten_loai_khach, 
-  sum(
-    chi_phi_thue + hdct.so_luong * dvdk.gia
-  ) as tong_tien 
+  lk.ten_loai_khach,
+  hd.ma_hop_dong,
+  chi_phi_thue + sum(dvdk.gia * hdct.so_luong)
 from 
-  hop_dong hd 
-  left join hop_dong_chi_tiet hdct 
-where 
-  hdct.ma_hop_dong = hd.ma_hop_dong 
-  left join dich_vu_di_kem dvdk 
-where 
-  dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem 
-  left join khach_hang kh 
-where 
-  kh.ma_khach_hang = hd.ma_khach_hang 
-  left join loai_khach lk 
-where 
-  lk.ma_loai_khach = kh.ma_loai_khach 
-  left join dich_vu dv 
-where 
-  dv.ma_dich_vu = hd.ma_dich_vu 
-group by 
+  khach_hang kh 
+left join loai_khach lk on lk.ma_loai_khach = kh.ma_loai_khach 
+left join hop_dong hd on kh.ma_khach_hang = hd.ma_khach_hang 
+left join dich_vu dv on dv.ma_dich_vu = hd.ma_dich_vu
+left join hop_dong_chi_tiet hdct on hdct.ma_hop_dong = hd.ma_hop_dong 
+left join dich_vu_di_kem dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem 
+group by
   hd.ma_hop_dong, 
   kh.ma_khach_hang 
 order by 
-  hd.ma_hop_dong desc, 
+  hd.ma_hop_dong asc, 
   kh.ma_khach_hang;
