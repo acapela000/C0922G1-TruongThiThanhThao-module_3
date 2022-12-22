@@ -19,7 +19,7 @@ not exists (select * from hop_dong hd where hd.ma_dich_vu = dv.ma_dich_vu and ye
 -- Học viên sử dụng theo 3 cách khác nhau để thực hiện yêu cầu trên.
 select kh.ho_ten from khach_hang kh
 union 
-select nv.ho_ten from nhan_vien nv;
+select kh.ho_ten from khach_hang kh;
 
 -- 9.Thực hiện thống kê doanh thu theo tháng, nghĩa là tương ứng với mỗi tháng trong năm 2021 
 -- thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng.
