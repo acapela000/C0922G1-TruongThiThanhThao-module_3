@@ -1,0 +1,84 @@
+@import url('https://css.gg/log-in.css');
+@media only screen and (min-width:1241px) {}
+    .col-1 {
+        width: 20%;
+        color: lightblue;
+        background-color: lavenderblush;
+    }
+    #link1, #link2, #link3 {
+        text-align: center;
+        margin: auto;
+    }
+    .col-2 {
+        width: 60%;
+    }
+    .col-3 {
+        width: 20%;
+        text-align: center;
+        background-color: lavenderblush;
+    }
+
+    #col3-1 {
+        background-color: bisque;
+        color: lightblue;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 10px;
+        width: 80%;
+        height: 20%;
+        display: block;
+    }
+
+    #col3-2 {
+        background-color: bisque;
+        color: lightblue;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 10px;
+        width: 80%;
+        height: 20%;
+        display: block;
+    }
+
+    #menu1, #menu2, #menu3, #menu4, #menu5 {
+        width: 7%;
+        color: white;
+        float: left;
+    }
+
+    #menu6 {
+        color: white;
+        float: right;
+        right: 10px;
+        position: relative;
+        margin-top: 0;
+        line-height: 0;
+    }
+
+    header {
+        background-color: black;
+        height: 30px;
+        line-height: 30px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .row {
+        background-color: lightcyan;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    p, h2 {
+        text-align: justify;
+        margin: 10px;
+    }
+    i {
+        position: relative;
+        margin-top: 5px;
+        right: 10px;
+    }
