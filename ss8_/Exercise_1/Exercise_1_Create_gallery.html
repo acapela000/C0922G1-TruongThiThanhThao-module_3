@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise_1_Create_gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        h1, h3, p {
+            padding: 10px;
+            font-family: "Times New Roman";
+        }
+        .hov:hover {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <h1><b> Responsive Image Gallery </b></h1>
+</div>
+
+<div>
+    <h3> Resize the browser window to see the effect. </h3>
+</div>
+
+<div class="row justify-content-center d-flex" style="padding: 20px; text-align: center">
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card m-lg-3 d-flex border: 1px solid bg-transparent rounded-0 hov">
+            <a href="img_1.jpg" target="_blank">
+                <img src="img_1.jpg" alt="Trolltunga Norway" width="100%" height="100%">
+            </a>
+            <div class="note m-3"> Add a description of the image here </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card m-lg-3 d-flex border: 1px solid bg-transparent rounded-0 hov" >
+            <a href="img_2.jpg" target="_blank">
+                <img src="img_2.jpg" alt="Forest" width="100%" height="100%">
+            </a>
+            <div class="note m-3"> Add a description of the image here </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card m-lg-3 d-flex border: 1px solid bg-transparent rounded-0 hov">
+            <a href="img_3.jpg" target="_blank">
+                <img src="img_3.jpg" alt="Northen Lights" width="100%" height="100%">
+            </a>
+            <div class="note m-3"> Add a description of the image here </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-3 col-sm-6">
+        <div class="card m-lg-3 d-flex border: 1px solid bg-transparent rounded-0 hov">
+            <a href="img_4.jpg" target="_blank">
+                <img src="img_4.jpg" alt="Mountains" width="100%" height="100%">
+            </a>
+            <div class="note m-3"> Add a description of the image here </div>
+        </div>
+    </div>
+
+
+    <div style="padding: 5px; text-align: left; font-size: 20px">
+        <p>
+        This example use media queries to re-arrange the images on different screen sizes:
+        for screens larger than 700px wide, it will show four images side by side,
+        for screens smaller than 700px, it will show two images side by side.
+        For screens smaller than 500px, the images will stack vertically (100%).
+        </p>
+    </div>
+
+</div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+</script>
+
+</html>
