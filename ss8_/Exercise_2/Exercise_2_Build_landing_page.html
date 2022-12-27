@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build_landing_page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .link_und {
+            text-align: center;
+            /*height: 35px;*/
+            /*line-height: 35px;*/
+        }
+        .hv,a .hv,a:visited, .hv,a:hover, .hv,a:active {
+            color: white;
+            text-decoration: none;
+        }
+        .hv:hover {
+            text-decoration: underline;
+        }
+        .container {
+            position: absolute;
+        }
+        .text-block {
+            color: white;
+            top: 30px;
+            background-color: transparent;
+            padding-left: 30px;
+            position: absolute;
+        }
+        p {
+            line-height: 35px;
+            height: 35px;
+            text-align: right;
+            padding-right: 45px;
+            font-family: "Times New Roman";
+        }
+        #laptop {
+            font-size: 60px;
+            text-align: left;
+            font-family: "Times New Roman";
+        }
+        h6 {
+            text-align: match-parent;
+            position: absolute;
+            top: 120px;
+        }
+        .bttn {
+            right: 0;
+            position: absolute;
+        }
+        .mic, .mic:hover, .mic:visited, .mic:active {
+            border: 5px dashed black;
+        }
+        #cros {
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        #ddl {
+            width: 100%;
+        }
+        #ddl, ul {
+            float: left;
+        }
+        
+    </style>
+</head>
+
+<!--<i class="fa-thin fa-magnifying-glass">Search</i>-->
+<!--<i class="bi bi-search"></i>-->
+
+<body>
+<div class="row bg-white">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.microsoft.com/en-us/?ql=4">
+                <img src="RE1Mu3b.png" alt=""Microsoft width="120" height="20" id="cros">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.microsoft.com/en-us/surface">Surface</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Computers
+                        </a>
+                        <div id="ddl">
+
+                            <ul class="dropdown-menu">
+                                <li><b> 2-in-1 PCs </b></li>
+                                <li><a class="dropdown-item" href="#"> NEW Surface Pro 9 </a></li>
+                                <li><a class="dropdown-item" href="#"> Surface Pro 8 </a></li>
+                                <li><a class="dropdown-item" href="#"> Surface Pro 7+ </a></li>
+                                <li><a class="dropdown-item" href="#"> Surface Go 3 </a></li>
+                                <li><a class="dropdown-item" href="#"> Explore all 2-in-1 PCs </a></li>
+                            </ul>
+
+                            <ul class="dropdown-menu">
+                                <li><b> Laptops </b></li>
+                                <li><a class="dropdown-item" href="#"> NEW Surface Laptop 5 </a></li>
+                                <li><a class="dropdown-item" href="#"> Surface Laptop 4 </a></li>
+                                <li><a class="dropdown-item" href="#"> Surface Laptop Studio </a></li>
+                                <li><a class="dropdown-item" href="#"> Surface Laptop Go 2 </a></li>
+                                <li><a class="dropdown-item" href="#"> Explore all Laptops </a></li>
+                            </ul>
+
+                            <ul>
+                                <li><b> Need help deciding </b></li>
+                                <li><a class="dropdown-item" href="#"> Compare Surface devices </a></li>
+                                <li><a class="dropdown-item" href="#"> Help me choose a Surface </a></li>
+                                <li><a class="dropdown-item" href="#"> Why Surface </a></li>
+                            </ul>
+
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Computers for Business</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Accessories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Shop now</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Support</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Support</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">SHOP DEALS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">All Microsoft</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Search</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Cart</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Sign in</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+</div>
+
+<div class="row bg-secondary">
+    <div class="col-md-12" style="text-align: right; padding-right: 10px"> Animation |
+        <div class="form-check form-switch bttn d-flex col-md-12">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked">On</label>
+        </div>
+    </div>
+</div>
+
+<div class="row link_und col-xl-12 bg-black">
+    <a class="hv" href="https://www.microsoft.com/en-us/store/b/surface-deals">
+        Grab deals when you shop our holiday sale on select Surface laptops, tablets, and 2-in-1s. Shop deals >
+    </a>
+</div>
+
+<div>
+    <div class="container">
+        <img src="Surface_HP_Holiday_Hero_wave_5_red_1920x1080.jpg" alt="computer" width="100%" height="100%" >
+        <div class="col-md-1">
+            <div class="text-block">
+                <p id="laptop"><b>
+                    Laptops designed by Microsoft
+                </b>
+                </p>
+
+                <div class="cols-lg-1 d-flex ">
+                    <h6>
+                        Unwrap inspiration this season with
+                        Surface laptops and 2-in-1s featuring the
+                        best of Windows 11.
+                    </h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+</script>
+
+</html>
