@@ -12,13 +12,12 @@
 </head>
 
 <body>
-<p> Product description: ${product_description} </p>
-<p> List price: ${list_price} </p>
-<p> Discount percent: ${discount_percent} </p>
+    <p> Product description: ${product_description} </p>
+    <p> List price: ${list_price} </p>
+    <p> Discount percent: ${discount_percent} </p>
 
-<h2> Discount amount: ${discount_amount}</h2>
-<h2> Result: ${discount_price} </h2>
-
+    <h2> Discount amount: ${discount_amount}</h2>
+    <h2> Result: ${discount_price} </h2>
 
 </body>
 </html>
