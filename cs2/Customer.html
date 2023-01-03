@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS2_Task_3</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+
+  <style>
+    .name {
+      font-family: VNI-Ariston;
+    }
+    #cusList {
+      text-align: center;
+      font-size: larger;
+    }
+  </style>
+</head>
+
+<body>
+<!--Header/Logo-->
+<div class="row container-fluid">
+  <div class="col-md-2">
+    <div class="card m-md-2 border-0 rounded-0 logo m-5 d-flex" style="width: 40%; height: 40%">
+      <img src="logoFuramaResort.png" alt="LogoFurama">
+    </div>
+
+
+  </div>
+
+  <div class="col-md-10 offset-sm-5 name">
+    <p class="m-3 justify-content-center d-flex ">Trương Thị Thanh Thảo</p>
+  </div>
+
+</div>
+<!--Navigate bar-->
+<div class="row d-flex justify-content-center align-items-center">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!--        <div class="container-fluid">-->
+    <!--            <a class="navbar-brand" href="#">Home</a>-->
+    <!--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--                <span class="navbar-toggler-icon"></span>-->
+    <!--            </button>-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Employee
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">List of employee</a></li>
+            <li><a class="dropdown-item" href="#">Add new employee</a></li>
+            <li><a class="dropdown-item" href="#">Edit employee</a></li>
+            <li><a class="dropdown-item" href="#">Delete employee</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Customer
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">List of customer</a></li>
+            <li><a class="dropdown-item" href="#">Add new customer</a></li>
+            <li><a class="dropdown-item" href="#">Edit customer</a></li>
+            <li><a class="dropdown-item" href="#">Delete customer</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Service
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">List of service</a></li>
+            <li><a class="dropdown-item" href="#">Add new service</a></li>
+            <li><a class="dropdown-item" href="#">Edit service</a></li>
+            <li><a class="dropdown-item" href="#">Delete service</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contract
+          </a>
+              <!--<li><a class="dropdown-item" href="#">Add new employee</a></li>
+              <li><a class="dropdown-item" href="#">Delete employee</a></li>-->
+        </li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn border-1 border-dark" type="submit">
+          <img src="icon-kinh-lup.png" width="30px" height="30px" alt="search">
+        </button>
+      </form>
+    </div>
+  </nav>
+
+</div>
+<!--Body-->
+<div class="row">
+<!--  <div class="col-md-3">-->
+<!--    <p>Item one</p>-->
+<!--    <p>Item two</p>-->
+<!--    <p>Item three</p>-->
+<!--  </div>-->
+<p id="cusList"><b>
+  ================= Customer List =================
+</b></p>
+  <div class="col-md-12 d-flex justify-content-center align-items-center">
+
+    <table class="table table-primary">
+      <tr>
+        <th> ID </th>
+        <th> Customer's type </th>
+        <th> Cus.Name </th>
+        <th> Date of birth </th>
+        <th> Gender </th>
+        <th> ID Card </th>
+        <th> Phone Number </th>
+        <th> Email </th>
+        <th> Address </th>
+        <th> Option </th>
+
+      </tr>
+
+        <tr>
+          <td> 01 </td>
+          <td> Members </td>
+          <td> John Smith </td>
+          <td> 1990/12/25 </td>
+          <td> Gay </td>
+          <td> 007 </td>
+          <td> 090-3869-7777 </td>
+          <td> john@amormio.com </td>
+          <td> NY </td>
+          <td> Option </td>
+          <td>
+            <button type="button" name="add"> ADD </button>
+            <button type="button" name="delete"> EDIT </button>
+            <button type="button" name="delete"> DELETE </button>
+          </td>
+        </tr>
+
+      <tr>
+        <td> 02 </td>
+        <td> Gold </td>
+        <td> Jack Smith </td>
+        <td> 1991/11/26 </td>
+        <td> Male </td>
+        <td> 008 </td>
+        <td> 090-3869-6666 </td>
+        <td> jack@amormio.com </td>
+        <td> LA </td>
+        <td> Option </td>
+        <td>
+          <button type="button" name="add"> ADD </button>
+          <button type="button" name="delete"> EDIT </button>
+          <button type="button" name="delete"> DELETE </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td> 03 </td>
+        <td> Diamond </td>
+        <td> Jane Smith </td>
+        <td> 1992/10/27 </td>
+        <td> Female </td>
+        <td> 009 </td>
+        <td> 090-3869-8888 </td>
+        <td> jane@amormio.com </td>
+        <td> CAD </td>
+        <td> Option </td>
+        <td>
+          <button type="button" name="add"> ADD </button>
+          <button type="button" name="delete"> EDIT </button>
+          <button type="button" name="delete"> DELETE </button>
+        </td>
+      </tr>
+
+    </table>
+
+
+  </div>
+</div>
+
+<!--Footer-->
+<div class="row bg-primary">
+  <div class="col-md-6 col-md-12 offset-sm-6">
+    <p>Footer</p>
+  </div>
+
+</div>
+
+</body>
+<script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+
+</html>
